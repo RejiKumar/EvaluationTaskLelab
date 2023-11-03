@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7e85a"
+    tools:context=".ui.StudentDetailActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStudentID"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/studentID" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentID"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentID"
+        android:background="@color/purple_700"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStudentFullName"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentID"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentID"
+        tools:text="@string/studentFullName" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentFullName"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentFullName"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStudentAge"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentFullName"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentFullName"
+        tools:text="@string/studentAge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentAge"
+        android:background="@color/purple_700"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStudentGender"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentAge"
+        tools:text="@string/studentGender" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentGender"
+        android:background="@color/purple_700"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStudentMajor"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentGender"
+        tools:text="@string/studentMajor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentMajor"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentMajor"
+        android:background="@color/purple_700"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStudentGPA"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentMajor"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentMajor"
+        tools:text="@string/studentGPA" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStudentGPA"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentGPA"
+        android:background="@color/purple_700"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

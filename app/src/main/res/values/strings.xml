@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EvaluationExerciseLelab</string>
+    <string name="studentID">1</string>
+    <string name="studentFullName">John Dao</string>
+    <string name="studentFirstName">John</string>
+    <string name="studentLastName">Dao</string>
+    <string name="studentAge">20</string>
+    <string name="studentGender">Male</string>
+    <string name="studentMajor">Computer Science</string>
+    <string name="studentGPA">3.8</string>
+</resources>
