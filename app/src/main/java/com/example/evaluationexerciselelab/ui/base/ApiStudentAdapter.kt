@@ -1,5 +1,6 @@
 package com.example.evaluationexerciselelab.ui.base
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import com.example.evaluationexerciselelab.R
 import com.example.evaluationexerciselelab.data.model.ApiStudentsItem
 
 class ApiStudentAdapter(
-    private val students: ArrayList<ApiStudentsItem>,
+    private var students: ArrayList<ApiStudentsItem>,
     val itemClickListener: (ApiStudentsItem)->Unit
 ) : RecyclerView.Adapter<ApiStudentAdapter.DataViewHolder>() {
 
@@ -33,11 +34,17 @@ class ApiStudentAdapter(
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
         holder.bind(students[position])
-        holder.itemView.setOnClickListener { itemClickListener(students.get(position)) }
+        holder.itemView.setOnClickListener { itemClickListener(students[position]) }
 
     }
 
     fun addData(list: List<ApiStudentsItem>) {
         students.addAll(list)
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun filterList(filterList: ArrayList<ApiStudentsItem>) {
+        students = filterList
+        notifyDataSetChanged()
     }
 }

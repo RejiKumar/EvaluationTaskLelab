@@ -8,4 +8,6 @@
     <string name="studentGender">Male</string>
     <string name="studentMajor">Computer Science</string>
     <string name="studentGPA">3.8</string>
+    <string name="search">Search</string>
+    <string name="ok">OK</string>
 </resources>

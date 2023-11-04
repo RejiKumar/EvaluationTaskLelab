@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#c7e85a"
     tools:context=".ui.StudentDetailActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -26,7 +25,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/tvStudentID"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentID"
-        android:background="@color/purple_700"
+        android:background="@color/light_grey"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -46,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
-        android:background="@color/purple_700"
+        android:background="@color/light_grey"
         app:layout_constraintEnd_toEndOf="@+id/tvStudentFullName"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentFullName"
         tools:ignore="MissingConstraints" />
@@ -71,7 +70,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/tvStudentAge"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentAge"
-        android:background="@color/purple_700"
+        android:background="@color/light_grey"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -93,7 +92,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/tvStudentGender"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentGender"
-        android:background="@color/purple_700"
+        android:background="@color/light_grey"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -115,7 +114,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/tvStudentMajor"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentMajor"
-        android:background="@color/purple_700"
+        android:background="@color/light_grey"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -137,7 +136,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/tvStudentGPA"
         app:layout_constraintTop_toBottomOf="@+id/tvStudentGPA"
-        android:background="@color/purple_700"
+        android:background="@color/light_grey"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
